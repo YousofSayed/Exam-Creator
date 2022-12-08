@@ -1,0 +1,319 @@
+/*Start Genral-Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container {
+    width: 94%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 950px;
+    }
+}
+
+:root {
+    --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --color: rgb(19, 245, 169);
+}
+
+body {
+    background-color: #eee;
+}
+
+/*End Genral-Settings */
+.nav {
+    background-color: var(--color);
+    padding: 20px 0;
+    border-bottom-left-radius: 40px;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 42px;
+    letter-spacing: 10px;
+}
+
+
+/* timer */
+.timer {
+    margin: 20px 0;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.timer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.timer .container .perant {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.timer .container .perant span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    background-color: #eee;
+}
+
+.timer .container .btn button {
+    padding: 10px 35px;
+    background-color: var(--color);
+    font-family: var(--font);
+    letter-spacing: 4px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* timer */
+
+/* qusetions  */
+
+.answers,
+.input-qus {
+    position: relative !important;
+    /* z-index: -1; */
+}
+
+.answers::before,
+.input-qus::before {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+input::placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.plusBtn {
+    display: flex;
+}
+
+.big-perant {
+    transition: .3s;
+}
+
+.but-questions {
+    margin: 30px 0;
+    padding: 15px 0;
+    transition: 1s;
+    background-color: #fff;
+}
+
+.but-questions .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.but-questions .container .input-qus input {
+    width: 50%;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.but-questions .container .perant {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.but-questions .container .answers {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.but-questions .container .perant input {
+    width: 100%;
+    background-color: #eee;
+    padding: 10px;
+
+}
+
+.but-questions .container .perant .plusBtn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    right: 0;
+    gap: 20px;
+}
+
+.but-questions .container .perant .plusBtn span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39px;
+    background-color: #eee;
+    width: 60px;
+    cursor: pointer;
+}
+
+.but-questions .container .text {
+    background-color: var(--color);
+    padding: 10px;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.but-questions .container .right-answer {
+    width: 50%;
+    padding: 20px;
+    background-color: #eee;
+    cursor: no-drop;
+}
+
+.but-questions .container .buttons {
+    display: flex;
+    gap: 30px;
+    width: 50%;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.but-questions .container .buttons button {
+    background-color: rgb(243, 44, 44);
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.finish {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(250, 46, 10, 0.945);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.btnfinish {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnfinish button {
+    padding: 10px 35px;
+    background-color: var(--color);
+    font-family: var(--font);
+    letter-spacing: 4px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.your-deg {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    display: none;
+
+}
+
+.your-deg .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+
+.your-deg .container .degree {
+    width: 60px;
+    height: 40px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.your-deg .container .percent {
+    width: 400px;
+    height: 40px;
+    position: relative;
+    border: .5px var(--color)solid;
+}
+
+.your-deg .container .percent span {
+    position: absolute;
+    /* width: 50%; */
+    height: 100%;
+    background-color: var(--color);
+}
+
+.your-deg .container .text {
+    width: 60px;
+    height: 40px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+@keyframes appear {
+    from {
+        display: none;
+        transform: scale(0);
+    }
+
+    to {
+        display: block;
+        transform: scale(1);
+    }
+}

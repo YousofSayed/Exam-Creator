@@ -1,0 +1,87 @@
+/*Start Genral-Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: unset;
+}
+
+.container {
+    width: 94%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 950px;
+    }
+}
+
+:root {
+    --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --color: rgb(19, 245, 169);
+}
+
+/*End Genral-Settings */
+
+body{
+    height: 100vh;
+}
+.landing{
+    position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+}
+.landing .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing .container .text .logo{
+color: var(--color);
+font-size: 55px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+.landing .container .text p{
+    color: #333;
+    height: 50px;
+    margin-bottom: 10px;
+    font-family: var(--font);
+    max-width: 300px;
+}
+.landing .container .text button{
+    padding: 10px 35px;
+    background-color: var(--color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.pupup{
+    position: fixed;
+    right: -45%;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+    z-index: -1;
+    transform: skew(150deg);
+}
+
+@media(max-width:767px){
+    .landing .container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+        .landing .container .text {
+            text-align: center;
+        }
+}
+/* End-animation */
